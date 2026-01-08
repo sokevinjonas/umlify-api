@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
+use App\Services\Uml\RepairService;
+use Illuminate\Support\Facades\Log;
 use App\Services\Uml\AnalysisService;
 use App\Services\Uml\GenerationService;
-use App\Services\Uml\NormalizationService;
-use App\Services\Uml\RepairService;
 use App\Services\Uml\ValidationService;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
+use App\Services\Uml\NormalizationService;
 
 class UmlController extends Controller
 {
